@@ -9,8 +9,8 @@ curl -X GET "http://localhost:8000/api/workflows/{version}/id/outputs"
 ```
   {
     "outputs":{
-      "HelloWorld.testFile":"{workflowRoot}/HelloWorld/{id}/call-WriteWorld/execution/test",
-      "HelloWorld.helloFile":"{workflowRoot}/HelloWorld/{id}/call-WriteHello/execution/stdout"
+      "HelloWorld.testFile":"{workflowRoot}/call-WriteWorld/execution/test",
+      "HelloWorld.helloFile":"{workflowRoot}/call-WriteHello/execution/stdout"
     },
     "id":"c1797ebe-0009-4645-98e2-79b807d39ec5"
   }
