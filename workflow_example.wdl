@@ -1,4 +1,4 @@
-import "https://raw.githubusercontent.com/huangzhibo/Learn/master/hello.wdl" as hello
+import "https://raw.githubusercontent.com/BGI-flexlab/workflow-examples/master/hello.wdl" as hello
 
 workflow HelloWorld {
 
