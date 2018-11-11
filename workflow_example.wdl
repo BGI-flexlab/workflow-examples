@@ -1,4 +1,5 @@
 import "https://raw.githubusercontent.com/BGI-flexlab/workflow-examples/master/hello.wdl" as hello
+import "https://raw.githubusercontent.com/BGI-flexlab/workflow-examples/master/sub_workflow.wdl" as sub
 
 workflow HelloWorld {
 
@@ -10,6 +11,8 @@ workflow HelloWorld {
 	call WriteWorld {
 	    input:slide=inputSamples[0]
 	}
+	
+	call sub.sub
 	
 	output {
 		File helloFile = WriteHello.outfile
