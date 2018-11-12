@@ -1,7 +1,9 @@
 task WriteHello {
+        String? name
+  
 	command {
 	        sleep 10
-		echo "Hello"
+		echo "Hello" ${default="" name}
 	}
 	output {
 		File outfile = stdout()
