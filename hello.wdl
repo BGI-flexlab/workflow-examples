@@ -7,5 +7,6 @@ task WriteHello {
 	}
 	output {
 		File outfile = stdout()
+		Boolean control = true
 	}
 }
